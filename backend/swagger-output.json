@@ -1,0 +1,71 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Jedlik REST API Server for 'Kilátók'",
+    "description": ""
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": ""
+    }
+  ],
+  "tags": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+  "paths": {
+    "/api/friends/{page}/{limit}/{filter}": {
+      "get": {
+        "tags": [
+          "Friends"
+        ],
+        "summary": "A Jóbarátok sorozatok lekérdezése szűréssel és paginálással",
+        "description": "",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1",
+            "description": "Hányadik oldaltól kezdjünk (min: 1)"
+          },
+          {
+            "name": "limit",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "3",
+            "description": "Mennyi rekord történjen küldésre oldalanként"
+          },
+          {
+            "name": "filter",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "where",
+            "description": "Csillag (*), ha nincs szűrés."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    }
+  }
+}
