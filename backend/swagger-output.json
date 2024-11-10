@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "version": "1.0.0",
-    "title": "Jedlik REST API Server for 'Kilátók'",
+    "title": "Jedlik REST API Server for 'Friends'",
     "description": ""
   },
   "servers": [
@@ -54,7 +54,7 @@
               "type": "string"
             },
             "example": "where",
-            "description": "Csillag (*), ha nincs szűrés."
+            "description": "Csillag karakter(*), ha nincs szűrés."
           }
         ],
         "responses": {

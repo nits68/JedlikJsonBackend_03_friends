@@ -26,7 +26,7 @@ app.get("/api/friends/:page/:limit/:filter", async (req: Request, res: Response)
     // #swagger.summary = 'A Jóbarátok sorozatok lekérdezése szűréssel és paginálással'
     // #swagger.parameters['page'] = { example: '1', description: 'Hányadik oldaltól kezdjünk (min: 1)' }
     // #swagger.parameters['limit'] = { example: '3', description: 'Mennyi rekord történjen küldésre oldalanként' }
-    // #swagger.parameters['filter'] = { example: 'where', description: 'Csillag (*), ha nincs szűrés.' }
+    // #swagger.parameters['filter'] = { example: 'where', description: 'Csillag karakter (*), ha nincs szűrés.' }
 
     try {
         const friends = await readDataFromFile("friends");
