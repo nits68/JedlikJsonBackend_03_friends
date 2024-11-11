@@ -54,7 +54,7 @@
               "type": "string"
             },
             "example": "where",
-            "description": "Csillag karakter(*), ha nincs szűrés."
+            "description": "Csillag karakter (*), ha nincs szűrés."
           }
         ],
         "responses": {
